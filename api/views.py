@@ -15,7 +15,7 @@ def hello_world(request):
 @method_decorator(csrf_exempt, name='dispatch')
 class CountdownList(APIView):
     def get(self, request, format=None): #todo: remove key from list view
-        countdowns = Countdown.objects.all()
+        countdowns = Countdown.objects.all().order_by('-id')[:10]
         serializer = CountdownSerializer(countdowns, many=True)
         return JsonResponse(serializer.data, safe=False)
 
