@@ -1,1 +1,1 @@
-web: gunicorn searchDrink.wsgi --log-file -
+web: gunicorn t_minus_backend.wsgi --log-file -

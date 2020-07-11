@@ -25,7 +25,7 @@ SECRET_KEY = '5#flia7lbti%+28+1f0t6)j)zq@+l5+q@y!-7-8_!lac4rr7zg'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost','api.t-min.us', 't-min-dot-us.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'api.t-min.us', 't-min-dot-us.herokuapp.com']
 
 # CORS 
 CORS_ORIGIN_ALLOW_ALL = True
