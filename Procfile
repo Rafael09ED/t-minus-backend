@@ -1,0 +1,1 @@
+web: gunicorn searchDrink.wsgi --log-file -
